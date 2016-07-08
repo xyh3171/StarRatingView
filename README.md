@@ -5,7 +5,7 @@
 ![github](https://github.com/xyh3171/StarRatingView/blob/master/StarRatingViewFeature.gif)
 
 # 使用方法
-1. 将StarRatingView和StarRating拖入项目，然后在控制器中导入StarRatingView.h即可。
+1. 将StarRatingView.h/.m和StarRating.h/.m拖入项目，然后在控制器中导入StarRatingView.h,遵守<StarRatingViewDelegate>协议即可。
 2. 在控制器中，输入以下代码，第一段为默认设置的方法，第二段代码可自由定制。
 
 ``` 
