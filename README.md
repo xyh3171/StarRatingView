@@ -1,5 +1,4 @@
 # StarRatingView
-# StarRatingView
 
 # 效果GIF图
 ![github](https://github.com/xyh3171/StarRatingView/blob/master/StarRatingViewFeature.gif)
