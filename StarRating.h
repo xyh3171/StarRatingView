@@ -11,7 +11,7 @@
 @interface StarRating : UIView
 
 @property (nonatomic, strong)UIColor *starColor;
-@property (nonatomic, assign)CGFloat score;
+@property (nonatomic, assign)CGFloat percent;
 
 - (instancetype)loadStarRatingW:(CGFloat)w andStarRatingH:(CGFloat)h;
 

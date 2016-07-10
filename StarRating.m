@@ -67,9 +67,9 @@
 }
 
 // 设置五角星的完成度，画半颗星和全颗星的方法
-- (void)setScore:(CGFloat)score {
-    _score = score;
-    self.backgroundLayer.strokeEnd = score;
+- (void)setPercent:(CGFloat)percent {
+    _percent = percent;
+    self.backgroundLayer.strokeEnd = percent;
 }
 
 @end

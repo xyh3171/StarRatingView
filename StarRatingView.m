@@ -57,7 +57,7 @@
             [star loadStarRatingW:w andStarRatingH:w];
             
             star.starColor = [UIColor clearColor];
-            star.score = 1;
+            star.percent = 1;
             
             [self.starArrayHalf addObject:star];
             [self addSubview:star];
@@ -119,7 +119,7 @@
     if (CGRectContainsPoint(self.bounds, point)) {
         for (int i = 0; i < self.num; i++) {
             StarRating *star = self.starArrayHalf[i];
-            star.score = 1;
+            star.percent = 1;
             star.starColor = [UIColor clearColor];
         }
         
@@ -153,7 +153,7 @@
     // 每次显示星星前先刷新星星为不存在
     for (int i = 0; i < self.num; i++) {
         StarRating *star = self.starArrayHalf[i];
-        star.score = 0;
+        star.percent = 0;
     }
     
     CGFloat maxX = point.x;
@@ -174,13 +174,13 @@
         // x.0半颗星
         if (j % 10 == 0) {
             StarRating *star = self.starArrayHalf[k];
-            star.score = 0.5;
+            star.percent = 0.5;
             star.starColor = self.lightStarColor;
             [self addSubview:star];
             // x.5全颗星
         } else {
             StarRating *star = self.starArrayHalf[k];
-            star.score = 1;
+            star.percent = 1;
             star.starColor = self.lightStarColor;
             [self addSubview:star];
         }
